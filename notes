@@ -1,0 +1,111 @@
+Git:
+Git is a version control system, that helps us to keep track and backup our project!
+
+Github:
+Github is a remote location where we can have our backup up codes safe for future references.
+
+What is a local Repo:
+A repo is a storage are, and by local it Mensa it is on our system
+
+What is remote repo:
+A storage area, and by remote means it is on the internet
+
+Tracking our first project using GIT.
+
+1.Create a new project in intellije and in order to start a tracking it follow the following steps
+
+1.Find the location of your project.(in inteliji the path is written in front of the project name, you can also right click on project name the click on open explorer)
+2.Decide the location where you want to create your project(please do not create a repo within a repo)
+3.Navigate your terminal to the location of your project
+
+Initializing the repo
+1.Git init
+
+3.Stage architecture:
+Working directory: all the files that you have in your project
+Staging area: An area between repo and working directory, here the snapshot of all the files are moved before actually moving them to repo.
+Repo: Our actual storage area.
+
+
+2.Git Status:
+Tells the status of repo,
+.untracked files
+.files are in staging area but not in repo yet
+.it does’t tell us about the files in staging area which are also in repo!
+
+Github:
+For each local repo you have unique individual remote repo
+Create a new Remote repo
+2.git remote -v check the connections
+Git remote add origin url
+To remove the connection between local repo and remote “git remote remove origin”
+
+Git ls-files:
+Show you the files are present in the staging area
+
+* You can not overwrite a file in staging area git is going to tell that hey you already have some changes in your staging that need to be in repo
+
+Git rm —cached filename:
+Removes the files from staging are
+
+Git diff:
+Shows us the difference between 2 the files in working directory and the staging area
+
+Git diff —cached
+shows the difference between files in repo and the staging area
+
+Git restore .
+To move your files from staging area to working directory
+
+
+Gitignore:
+Help us ignore the files/folders that we don’t want to track
+Remember, if you already tracking that file/folder gitignore will not ignore it
+That why if you want to ignore a file/folder do it at the very start, before adding that folder in staging area
+
+1. touch .gitignore
+2. Open files add the name of the file or folder u want to ignore
+3. Save the .gitignore file
+
+You will not see it any more in git status
+
+To get code form a remote repo
+1.clone
+2.download
+
+The difference is that if u download the code u just down the lates commit that is there
+But when u clone it, it down the whole repo along with that. (All previous commits are also included).
+
+If you clone u can update the repo using git commands
+If u dan u can update the repo
+
+Git clone:
+Git clone url
+Make sure url is https not the “SSH”
+
+Git pull
+Tells u if there is any update in remote repo
+
+Git pull
+It will download the latest updates from the remote
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
